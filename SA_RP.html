@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>E-Xcel Register Page</title>
+        <link rel="stylesheet" href="Style1.css">
+
+        <script src="Register.js"></script>
+    </head>
+<html>    
+    <body>
+        <div class="box">
+            <h2>Register</h2>
+            <form action="Insert.php" id="myInput" onsubmit="return Validate()" name="valid_form" method="POST">
+                <div class="inputBox">
+                    <input type="text" id="Fullname" name="fullname">
+                    <div id="Fullname_error"></div>
+                    <label>Full Name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" id="Email" name="email">
+                    <div id="email_error"></div>
+                    <label>Email</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password" id="Pass" name="pass">
+                    <div id="password_error"></div>
+                    <label>Enter Password</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password"  id="Cpass">
+                    <div id="cpassword_error"></div>
+                    <label>Confirm Password</label>
+                </div>
+				<div class="buttonHolder">
+               		<input type="Submit"  value="Submit">
+               	</div>
+                <p><b id="text"></b></p>
+            </form>
+            <form action="SA_LP.html">
+            	<div class="buttonHolder">
+               		<input type="Submit" name="register" value="Redirect to Login Page">
+               	</div>
+            </form>
+        </div>
+    </body>
+</html>
